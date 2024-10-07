@@ -20,7 +20,7 @@ class HomeDesktop extends StatelessWidget {
         children: [
           Positioned(
             bottom: 0,
-            right: 0,
+            right: 30,
             child: Opacity(
               opacity: 0.9,
               child: EntranceFader(
@@ -105,7 +105,7 @@ class HomeDesktop extends StatelessWidget {
                             textStyle: AppText.b1,
                           ),
                           TyperAnimatedText(
-                            ' A friend :)',
+                            ' Mobile App Developer',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
                           ),

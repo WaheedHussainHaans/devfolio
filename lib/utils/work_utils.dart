@@ -7,7 +7,7 @@ class WorkUtils {
     StaticUtils.bamrec,
     StaticUtils.cruiseLegend,
     StaticUtils.makkarPharmacy,
-    StaticUtils.dsc,
+    // StaticUtils.dsc,
     // StaticUtils.sastaticket,
   ];
 
