@@ -98,11 +98,11 @@ class AboutTab extends StatelessWidget {
                 children: [
                   AboutMeData(
                     data: "Name",
-                    information: "Muhammad Hamza",
+                    information: "Waheed Hussain",
                   ),
                   AboutMeData(
                     data: "Age",
-                    information: "24",
+                    information: "25",
                   ),
                 ],
               ),
@@ -114,11 +114,11 @@ class AboutTab extends StatelessWidget {
                 children: [
                   AboutMeData(
                     data: "Email",
-                    information: "hamza.6.shakeel@gmail.com",
+                    information: "Waheedhaans01@gmail.com",
                   ),
                   AboutMeData(
                     data: "From",
-                    information: "Attock, PK",
+                    information: "Multan, PK",
                   ),
                 ],
               ),

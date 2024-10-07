@@ -1,13 +1,27 @@
 class ProjectUtils {
   static const List<String> banners = [
-    "assets/projects/snackbar.png",
-    "assets/projects/quranB.png",
-    "assets/projects/medkitB.png",
-    "assets/projects/hereiamB.png",
-    "assets/projects/covidB.png",
+    "assets/projects/bamrec-mentor-cover.png",
+    "assets/projects/bamrec-family-cover.png",
+    "assets/projects/bamrec-org-cover.png",
+    "assets/projects/makkah-pharmacy-cover.png",
+    "assets/projects/cruiselegend-cover.png",
+    "assets/projects/barkatfood-cover.png",
+    "assets/projects/eclair-pizza-cover.png",
+    // "assets/projects/snackbar.png",
+    // "assets/projects/quranB.png",
+    // "assets/projects/medkitB.png",
+    // "assets/projects/hereiamB.png",
+    // "assets/projects/covidB.png",
   ];
 
   static const List<String> icons = [
+    "assets/projects/bamrec.png",
+    "assets/projects/bamrec.png",
+    "assets/projects/bamrec.png",
+    "assets/projects/makkah-pharm-logo.png",
+    "assets/projects/cruiselegend-logo.png",
+    "assets/projects/barkatfood-logo.png",
+    "assets/projects/eclair-pizza-logo.png",
     "assets/projects/flutter.png",
     "assets/projects/quran.png",
     "assets/projects/medkit.png",
@@ -22,6 +36,13 @@ class ProjectUtils {
   ];
 
   static const List<String> titles = [
+    "Bamrec Mentor App",
+    "Bamrec Family App",
+    "Bamrec Organization App",
+    "Makkah Pharmacy",
+    "CruiseLegend",
+    "Barkat Food",
+    "Eclair Pizza",
     "Awesome Snackbar Dart Package",
     "The Holy Qur'an",
     "MedKit",
@@ -36,6 +57,13 @@ class ProjectUtils {
   ];
 
   static const List<String> description = [
+    'The Bamrec Mentor App connects students with experienced mentors for personalized guidance and skill development, helping achieve their goals faster.',
+    'Bamrec Family App allows families to register for events, hire mentors, and stay informed with the latest organization news, making it easy to stay connected and engaged.',
+    'The Bamrec Organization App enables organizations to create and manage events, hire mentors, handle kid check-ins, and share news updates, streamlining event coordination and communication.',
+    'At Makkah. we are uncompromisingly honest and believe that trust and personal responsibility form the cornerstone of all relationships. These values ensure that we only source the highest quality medical equipment from across the world.',
+    'The main feature is to show which other ships you can expect to be in port when you are there. The app presents some basic cruise ship information as well as a basic guide to various cruise ports around the world.',
+    'With the Barkat Food App, you can easily access all services, allowing you to shop the entire Halal market with just a click. Imagine cooking delicious and healthy Halal meals for your family, creating new recipes, or preparing the meals from your childhood that warm your heart—all without leaving home, with 24/7 support.',
+    'Eclair Pizza , the pizza specialist in Avignon, invites you to taste ever more generous and delicious pizzas. Don\'t wait any longer and browse our menu to order directly online !',
     "A very unique dart package to uplift the snackbar experience in flutter. Available at pub.dev now!",
     "Application of Holy book of Muslims, Al-Qur'an. Developed using Flutter. Powered with live RestAPI given in README.md",
     "A Phramacy app developed using Flutter powered with Firebase as database with Doctor and Patient panels.",
@@ -50,6 +78,12 @@ class ProjectUtils {
   ];
 
   static const List<String> links = [
+    'https://apps.apple.com/us/app/bamrec-mentor/id1566223766',
+    'https://apps.apple.com/pk/app/bamrec-family/id6452472515',
+    'https://apps.apple.com/pk/app/id6452499299',
+    'https://apps.apple.com/pk/app/makkah-pharmacy/id1604929350',
+    'https://apps.apple.com/pk/app/cruiselegend/id6464536349',
+    'https://apps.apple.com/pk/app/barkat-food/id6612012126',
     "https://pub.dev/packages/awesome_snackbar_content",
     "https://github.com/mhmzdev/The_Holy_Quran_App",
     "https://github.com/mhmzdev/MedKit-Pharmacy-App-Using-Flutter",

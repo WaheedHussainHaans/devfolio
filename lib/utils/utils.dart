@@ -12,7 +12,7 @@ class StaticUtils {
 
   // photos
   static const String mobilePhoto = 'assets/photos/mobile.png';
-  static const String coloredPhoto = 'assets/photos/colored.png';
+  static const String coloredPhoto = 'assets/photos/colored.jpg';
   static const String blackWhitePhoto = 'assets/photos/black-white.png';
 
   // work
@@ -20,6 +20,9 @@ class StaticUtils {
   static const String sastaticket = 'assets/work/st.png';
   static const String university = 'assets/work/cui.png';
   static const String fullterIsb = 'assets/work/flutterIsl.png';
+  static const String bamrec = 'assets/work/bamrec.png';
+  static const String makkarPharmacy = 'assets/projects/makkah-pharm-logo.png';
+  static const String cruiseLegend = 'assets/projects/cruiselegend-logo.png';
 
   // services
   static const String uiux = 'assets/services/ui.png';
@@ -30,27 +33,27 @@ class StaticUtils {
   static const String openSourceBlack = 'assets/services/open_b.png';
 
   static const List<String> socialIconURL = [
-    "https://img.icons8.com/metro/208/ffffff/facebook-new--v2.png",
-    "https://img.icons8.com/ios-glyphs/480/ffffff/instagram-new.png",
+    // "https://img.icons8.com/metro/208/ffffff/facebook-new--v2.png",
+    // "https://img.icons8.com/ios-glyphs/480/ffffff/instagram-new.png",
     "https://img.icons8.com/android/480/ffffff/twitter.png",
     "https://img.icons8.com/metro/308/ffffff/linkedin.png",
     "https://img.icons8.com/material-rounded/384/ffffff/github.png",
-    "https://img.icons8.com/ios-filled/500/ffffff/medium-monogram--v1.png"
+    // "https://img.icons8.com/ios-filled/500/ffffff/medium-monogram--v1.png"
   ];
 
   static const List<String> socialLinks = [
-    "https://facebook.com/mhmzdev",
-    "https://instagram.com/mhmzdev",
-    "https://twitter.com/mhmzdev",
-    "https://linkedin.com/in/mhmzdev",
-    "https://github.com/mhmzdev",
-    "https://mhmzdev.medium.com"
+    // "https://facebook.com/mhmzdev",
+    // "https://instagram.com/mhmzdev",
+    "https://twitter.com/waheed_tweetss",
+    "https://linkedin.com/in/waheed-hussain-96828b172/",
+    "https://github.com/WaheedHussainHaans",
+    // "https://mhmzdev.medium.com"
   ];
 
   static const String resume =
-      'https://drive.google.com/file/d/1bDNNrkQtNVJbXcdwMSx0crQQvAF_nMwV/view?usp=sharing';
+      'https://drive.google.com/file/d/1oShaijCXbCvgLK0H_JfIwxvlmDa_G2zm/view?usp=sharing';
 
-  static const String gitHub = 'https://github.com/mhmzdev';
+  static const String gitHub = 'https://github.com/WaheedHussainHaans';
 }
 
 class BodyUtils {
