@@ -16,9 +16,26 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
       - name: Build Web
-        run: flutter build web --base-href "/devfolio/"
+        run: |
+          repo_name=${GITHUB_REPOSITORY#*/}
+          if [ "$repo_name" = "${{ github.repository_owner }}.github.io" ]; then
+            base_href="/"
+          else
+            base_href="/$repo_name/"
+          fi
+          echo "Building with base href: $base_href"
+          flutter build web --release --base-href $base_href
+      - name: List build output
+        run: |
+          echo "Contents of build/web directory:"
+          ls -R build/web
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build/web
+      - name: Verify deployment
+        run: |
+          echo "Deployment completed. Please check these URLs:"
+          echo "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+          echo "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/index.html"
