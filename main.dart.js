@@ -1087,7 +1087,7 @@ s.RT()
 return s},
 atL(a){return new A.Vl($.ag,a)},
 ag4(){var s,r,q,p,o,n=A.atr(self.window.navigator)
-if(n==null||n.length===0)return B.kT
+if(n==null||n.length===0)return B.kU
 s=A.a([],t.ss)
 for(r=n.length,q=0;q<n.length;n.length===r||(0,A.H)(n),++q){p=n[q]
 o=J.arY(p,"-")
@@ -5951,7 +5951,7 @@ s+=j
 r=s
 p=!0}else if(o<127&&(B.Cd[o>>>4]&1<<(o&15))!==0){if(p&&65<=o&&90>=o){if(q==null)q=new A.cI("")
 if(r<s){q.a+=B.d.a9(a,r,s)
-r=s}p=!1}++s}else if(o<=93&&(B.kW[o>>>4]&1<<(o&15))!==0)A.rc(a,s,"Invalid character")
+r=s}p=!1}++s}else if(o<=93&&(B.kX[o>>>4]&1<<(o&15))!==0)A.rc(a,s,"Invalid character")
 else{j=1
 if((o&64512)===55296&&s+1<c){i=a.charCodeAt(s+1)
 if((i&64512)===56320){o=(o&1023)<<10|i&1023|65536
@@ -5972,7 +5972,7 @@ ahM(a,b,c){var s,r,q
 if(b===c)return""
 if(!A.anh(a.charCodeAt(b)))A.rc(a,b,"Scheme not starting with alphabetic character")
 for(s=b,r=!1;s<c;++s){q=a.charCodeAt(s)
-if(!(q<128&&(B.kS[q>>>4]&1<<(q&15))!==0))A.rc(a,s,"Illegal scheme character")
+if(!(q<128&&(B.kT[q>>>4]&1<<(q&15))!==0))A.rc(a,s,"Illegal scheme character")
 if(65<=q&&q<=90)r=!0}a=B.d.a9(a,b,c)
 return A.ayM(r?a.toLowerCase():a)},
 ayM(a){if(a==="http")return"http"
@@ -5984,7 +5984,7 @@ anm(a,b,c){if(a==null)return""
 return A.AA(a,b,c,B.BR,!1,!1)},
 ank(a,b,c,d,e,f){var s,r=e==="file",q=r||f
 if(a==null)return r?"/":""
-else s=A.AA(a,b,c,B.kV,!0,!0)
+else s=A.AA(a,b,c,B.kW,!0,!0)
 if(s.length===0){if(r)return"/"}else if(q&&!B.d.bg(s,"/"))s="/"+s
 return A.ayT(s,e,f)},
 ayT(a,b,c){var s=b.length===0
@@ -6034,7 +6034,7 @@ if(o===37){m=A.ahN(a,r,!1)
 if(m==null){r+=3
 continue}if("%"===m)m="%25"
 else n=3}else if(o===92&&f)m="/"
-else if(s&&o<=93&&(B.kW[o>>>4]&1<<(o&15))!==0){A.rc(a,r,"Invalid character")
+else if(s&&o<=93&&(B.kX[o>>>4]&1<<(o&15))!==0){A.rc(a,r,"Invalid character")
 n=i
 m=n}else{if((o&64512)===55296){l=r+1
 if(l<c){k=a.charCodeAt(l)
@@ -6075,7 +6075,7 @@ return B.b.bx(s,"/")},
 ang(a){var s,r,q=a.length
 if(q>=2&&A.anh(a.charCodeAt(0)))for(s=1;s<q;++s){r=a.charCodeAt(s)
 if(r===58)return B.d.a9(a,0,s)+"%3A"+B.d.ce(a,s+1)
-if(r>127||(B.kS[r>>>4]&1<<(r&15))===0)break}return a},
+if(r>127||(B.kT[r>>>4]&1<<(r&15))===0)break}return a},
 ayV(a,b){if(a.a5K("package")&&a.c==null)return A.ao5(b,0,b.length)
 return-1},
 ayP(){return A.a([],t.s)},
@@ -6782,7 +6782,7 @@ if(r==null)r=3
 s=b==null?null:b.a
 r=A.M(r,s==null?3:s,c)
 r.toString
-return B.kY[A.B9(B.c.a4(r),0,8)]},
+return B.kZ[A.B9(B.c.a4(r),0,8)]},
 akn(a,b,c){var s=a==null,r=s?null:a.a,q=b==null
 if(r==(q?null:b.a))s=s&&q
 else s=!0
@@ -29327,11 +29327,11 @@ ga6c(){var s=this.a
 if(s instanceof A.dM)return s
 return this.a=new A.dM(s)},
 ga6P(){var s,r,q,p,o,n=this
-if(n.c===1)return B.l1
+if(n.c===1)return B.l2
 s=n.d
 r=J.aW(s)
 q=r.gq(s)-J.c0(n.e)-n.f
-if(q===0)return B.l1
+if(q===0)return B.l2
 p=[]
 for(o=0;o<q;++o)p.push(r.j(s,o))
 return J.akK(p)},
@@ -32311,7 +32311,7 @@ n=o.w=s.charCodeAt(0)==0?s:s}return n},
 guw(){var s,r,q=this,p=q.x
 if(p===$){s=q.e
 if(s.length!==0&&s.charCodeAt(0)===47)s=B.d.ce(s,1)
-r=s.length===0?B.l_:A.EZ(new A.an(A.a(s.split("/"),t.s),A.aAY(),t.Gf),t.N)
+r=s.length===0?B.l0:A.EZ(new A.an(A.a(s.split("/"),t.s),A.aAY(),t.Gf),t.N)
 q.x!==$&&A.al()
 p=q.x=r}return p},
 gv(a){var s,r=this,q=r.y
@@ -32439,7 +32439,7 @@ r=B.d.mF(m,"?",s)
 q=m.length
 if(r>=0){p=A.AA(m,r+1,q,B.ek,!1,!1)
 q=r}else p=n
-m=o.c=new A.Kg("data","",n,n,A.AA(m,s,q,B.kV,!1,!1),p,n)}return m},
+m=o.c=new A.Kg("data","",n,n,A.AA(m,s,q,B.kW,!1,!1),p,n)}return m},
 k(a){var s=this.a
 return this.b[0]===-1?"data:"+s:s}}
 A.adL.prototype={
@@ -32490,7 +32490,7 @@ ghM(){var s=this.r,r=this.a
 return s<r.length?B.d.ce(r,s+1):""},
 guw(){var s,r,q=this.e,p=this.f,o=this.a
 if(B.d.c9(o,"/",q))++q
-if(q===p)return B.l_
+if(q===p)return B.l0
 s=A.a([],t.s)
 for(r=q;r<p;++r)if(o.charCodeAt(r)===47){s.push(B.d.a9(o,q,r))
 q=r+1}s.push(B.d.a9(o,q,p))
@@ -37646,7 +37646,7 @@ r=n.r
 n=n.cx
 q=p.gXH()
 p.a.toString
-return new A.xT(o,o,o,new A.aao(),o,o,o,o,o,o,m,o,o,r,B.Dg,p.gXN(),n,o,B.LG,s,o,q,o,o,B.kT,!1,!1,o,o,o,new A.mw(p,t.bT))},
+return new A.xT(o,o,o,new A.aao(),o,o,o,o,o,o,m,o,o,r,B.Dg,p.gXN(),n,o,B.LG,s,o,q,o,o,B.kU,!1,!1,o,o,o,new A.mw(p,t.bT))},
 I(a){var s,r=null,q=A.ul(!1,!1,this.SS(a),r,r,r,r,!0,r,r,r,new A.aap(),r,r)
 this.a.toString
 s=this.d
@@ -45585,7 +45585,7 @@ p=e==null?h.gkg(0):e
 o=h.r
 o=o==null?g:o*a2+a1
 n=h.w
-n=n==null?g:B.kY[B.f.hG(n.a,0,8)]
+n=n==null?g:B.kZ[B.f.hG(n.a,0,8)]
 m=h.y
 m=m==null?g:m+0
 l=h.z
@@ -46191,8 +46191,8 @@ s=r.a7
 r.cS=s==null?null:s.gqg()
 a.a=!1},
 oi(a,b,c){var s,r,q,p,o=this
-o.ef=A.alF(o.ef,B.l0)
-o.eI=A.alF(o.eI,B.l0)
+o.ef=A.alF(o.ef,B.l1)
+o.eI=A.alF(o.eI,B.l1)
 s=o.ef
 r=s!=null&&!s.gS(s)
 s=o.eI
@@ -53353,7 +53353,7 @@ A.f6.prototype={
 H(){return"ModifierKey."+this.b}}
 A.w0.prototype={
 ga6j(){var s,r,q=A.x(t.xS,t.Di)
-for(s=0;s<9;++s){r=B.l3[s]
+for(s=0;s<9;++s){r=B.l4[s]
 if(this.a5I(r))q.n(0,r,B.cj)}return q}}
 A.jq.prototype={}
 A.a2c.prototype={
@@ -53387,7 +53387,7 @@ i=$.i_
 if(i!=null)i.$1(new A.bx(r,q,"services library",j,p,!1))}}return!1},
 a_G(a1){var s,r,q,p,o,n,m,l,k,j,i,h,g=a1.c,f=g.ga6j(),e=t.v3,d=A.x(e,t.r),c=A.aB(e),b=this.d,a=A.fG(new A.b2(b,A.m(b).h("b2<1>")),e),a0=a1 instanceof A.kP
 if(a0)a.D(0,g.gho())
-for(s=g.a,r=null,q=0;q<9;++q){p=B.l3[q]
+for(s=g.a,r=null,q=0;q<9;++q){p=B.l4[q]
 o=$.apK()
 n=o.j(0,new A.ck(p,B.ba))
 if(n==null)continue
@@ -66007,13 +66007,13 @@ s=$.bk
 r=new A.eA(B.kQ,t.tm)
 return A.ce(q,A.ds(A.a([B.kh,B.kk,o,A.J_(B.cI,r.gcR(r).cV(0,new A.TM(),t.a7).cJ(0),B.iF,s*10*0.77+10,0)],t.p),B.a2,B.p,B.w),q,q,q,q,p,q)}}
 A.TM.prototype={
-$1(a){var s=null,r=a.a,q=B.kU[r]
+$1(a){var s=null,r=a.a,q=B.kV[r]
 return new A.nP(A.a24(s,B.l6[r],s,a.b,s,q),s)},
 $S:427}
 A.CT.prototype={
 I(a){return A.ds(A.a([B.kh,B.kk,A.afG(new A.TN(),3,A.afF(!0,B.b8,B.aL,B.h6,!1,!0,$.bk*90*0.77+90,0.8))],t.p),B.a2,B.p,B.w)}}
 A.TN.prototype={
-$3(a,b,c){var s=null,r=B.kQ[c],q=B.kU[c]
+$3(a,b,c){var s=null,r=B.kQ[c],q=B.kV[c]
 return new A.bS(B.ks,A.a24(s,B.l6[c],s,r,s,q),s)},
 $S:72}
 A.Es.prototype={
@@ -66142,7 +66142,7 @@ $S:429}
 A.M4.prototype={
 I(a){var s,r=null,q=A.e9(a,!0,t.W),p=A.e9(a,!0,t.At),o=q.a===B.ag,n=o?B.bk:B.i,m=$.cs.a
 o=A.a([B.yG,B.ko,A.akY(A.mD(B.B4,m,r),B.Ne,A.amc(m,B.ex,new A.aaN(q),o)),B.ko],t.p)
-m=new A.eA(B.kZ,t.ly)
+m=new A.eA(B.l_,t.ly)
 B.b.M(o,m.gcR(m).cV(0,new A.aaO(p,a),t.l7))
 m=$.cs.a
 s=m.a
@@ -66173,7 +66173,7 @@ A.Md.prototype={
 I(a){var s,r,q,p=null,o=A.e9(a,!0,t.W),n=A.xb(0.5,p),m=o.a===B.ag?B.l:B.i,l=$.ah3
 l.toString
 l=A.a([B.hM,l],t.p)
-s=new A.eA(B.kZ,t.ly)
+s=new A.eA(B.l_,t.ly)
 B.b.M(l,s.gcR(s).cV(0,new A.aaY(),t.l7))
 s=$.cs.a
 r=s.a
@@ -66234,19 +66234,19 @@ r.toString
 q=$.bk
 return A.ce(p,A.ds(A.a([B.kf,B.ki,s,r,A.ca(A.FX(A.bo("See More",$.rN,p),new A.abt()),q*14*0.77+14,q*50*0.77+50)],t.p),B.a2,B.p,B.w),p,p,p,p,o,p)}}
 A.abs.prototype={
-$1(a){var s=a.a,r=B.kX[s],q=B.l2[s],p=B.l4[s]
+$1(a){var s=a.a,r=B.kY[s],q=B.l3[s],p=B.kS[s]
 return A.a24(a.b,B.kR[s],r,null,q,p)},
 $S:432}
 A.abt.prototype={
 $0(){return A.hN(A.d0("https://github.com/WaheedHussainHaans",0,null))},
 $S:0}
 A.Gi.prototype={
-I(a){var s,r=A.afG(new A.a1X(),18,A.afF(!0,B.b8,B.aL,B.h6,!1,!0,A.b_(a,null,t.w).w.a.b*0.4,0.8)),q=$.dU
+I(a){var s,r=A.afG(new A.a1X(),7,A.afF(!0,B.b8,B.aL,B.h6,!1,!0,A.b_(a,null,t.w).w.a.b*0.4,0.8)),q=$.dU
 q.toString
 s=$.bk
 return A.ds(A.a([B.kf,B.ki,r,q,A.ca(A.FX(A.bo("See More",$.rN,null),new A.a1Y()),s*14*0.77+14,s*50*0.77+50)],t.p),B.a2,B.p,B.w)}}
 A.a1X.prototype={
-$3(a,b,c){var s=B.kX[c],r=B.l2[c],q=B.l4[c]
+$3(a,b,c){var s=B.kY[c],r=B.l3[c],q=B.kS[c]
 return new A.bS(B.Au,A.a24(null,B.kR[c],s,null,r,q),null)},
 $S:72}
 A.a1Y.prototype={
@@ -70648,7 +70648,8 @@ B.xf=new A.cl(0,B.aJ,B.zL,B.qm,8)
 B.yQ=new A.l(251658240)
 B.xg=new A.cl(0,B.aJ,B.yQ,B.qm,1)
 B.CF=A.a(s([B.xf,B.xg]),t.sq)
-B.kS=A.a(s([0,0,26624,1023,65534,2047,65534,2047]),t.t)
+B.kS=A.a(s(["Bamrec Mentor App","Bamrec Family App","Bamrec Organization App","Makkah Pharmacy","CruiseLegend","Barkat Food","Eclair Pizza"]),t.s)
+B.kT=A.a(s([0,0,26624,1023,65534,2047,65534,2047]),t.t)
 B.da=A.a(s([B.cc,B.bh,B.dP,B.dQ,B.fk]),t.QP)
 B.bd=new A.hH(0,"leading")
 B.aI=new A.hH(1,"title")
@@ -70670,9 +70671,9 @@ B.Bj=new A.j2(B.Cp,"image/bmp")
 B.CO=A.a(s([B.Bi,B.Bm,B.Bn,B.Bl,B.Bk,B.Bj]),A.aw("y<j2>"))
 B.hi=A.a(s(["assets/services/app.png","assets/services/ui.png","assets/services/rapid.png","assets/services/blog.png","assets/services/open.png"]),t.s)
 B.Dy=new A.kE("en","US")
-B.kT=A.a(s([B.Dy]),t.ss)
-B.kU=A.a(s(["Location","Phone","Email"]),t.s)
-B.kV=A.a(s([0,0,65490,12287,65535,34815,65534,18431]),t.t)
+B.kU=A.a(s([B.Dy]),t.ss)
+B.kV=A.a(s(["Location","Phone","Email"]),t.s)
+B.kW=A.a(s([0,0,65490,12287,65535,34815,65534,18431]),t.t)
 B.CP=A.a(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","keyup","keydown"]),t.s)
 B.CU=A.a(s(["https://twitter.com/waheed_tweetss","https://linkedin.com/in/waheed-hussain-96828b172/","https://github.com/WaheedHussainHaans"]),t.s)
 B.hj=A.a(s(["https://www.comsats.edu.pk/","https://web.facebook.com/FlutterIslamabadPakistan/","https://dsc.community.dev/comsats-university-islamabad/","https://sastaticket.pk/"]),t.s)
@@ -70685,8 +70686,8 @@ B.CY=A.a(s([B.aG,B.m]),A.aw("y<xn>"))
 B.al=new A.xr(0,"rtl")
 B.a3=new A.xr(1,"ltr")
 B.hk=A.a(s([B.al,B.a3]),A.aw("y<xr>"))
-B.kW=A.a(s([0,0,32776,33792,1,10240,0,0]),t.t)
-B.kX=A.a(s(["assets/projects/bamrec.png","assets/projects/bamrec.png","assets/projects/bamrec.png","assets/projects/makkah-pharm-logo.png","assets/projects/cruiselegend-logo.png","assets/projects/barkatfood-logo.png","assets/projects/eclair-pizza-logo.png","assets/projects/flutter.png","assets/projects/quran.png","assets/projects/medkit.png","assets/projects/hereiam.png","assets/projects/covid.png","assets/projects/messenger.png","assets/projects/flutter.png","assets/projects/earbender.png","assets/projects/java.png","assets/projects/android.png","assets/services/open_b.png"]),t.s)
+B.kX=A.a(s([0,0,32776,33792,1,10240,0,0]),t.t)
+B.kY=A.a(s(["assets/projects/bamrec.png","assets/projects/bamrec.png","assets/projects/bamrec.png","assets/projects/makkah-pharm-logo.png","assets/projects/cruiselegend-logo.png","assets/projects/barkatfood-logo.png","assets/projects/eclair-pizza-logo.png","assets/projects/flutter.png","assets/projects/quran.png","assets/projects/medkit.png","assets/projects/hereiam.png","assets/projects/covid.png","assets/projects/messenger.png","assets/projects/flutter.png","assets/projects/earbender.png","assets/projects/java.png","assets/projects/android.png","assets/services/open_b.png"]),t.s)
 B.AN=new A.fB(1)
 B.AO=new A.fB(2)
 B.F=new A.fB(3)
@@ -70694,12 +70695,12 @@ B.ab=new A.fB(4)
 B.AP=new A.fB(5)
 B.AQ=new A.fB(7)
 B.kw=new A.fB(8)
-B.kY=A.a(s([B.ed,B.AN,B.AO,B.F,B.ab,B.AP,B.b9,B.AQ,B.kw]),A.aw("y<fB>"))
-B.kZ=A.a(s(["HOME","ABOUT","SERVICES","PROJECTS","CONTACT"]),t.s)
+B.kZ=A.a(s([B.ed,B.AN,B.AO,B.F,B.ab,B.AP,B.b9,B.AQ,B.kw]),A.aw("y<fB>"))
+B.l_=A.a(s(["HOME","ABOUT","SERVICES","PROJECTS","CONTACT"]),t.s)
 B.D1=A.a(s(["click","scroll"]),t.s)
 B.Df=A.a(s([]),t.QP)
 B.Dj=A.a(s([]),t.sq)
-B.l0=A.a(s([]),A.aw("y<aCV>"))
+B.l1=A.a(s([]),A.aw("y<aCV>"))
 B.Dc=A.a(s([]),t.ER)
 B.Dg=A.a(s([]),t.tc)
 B.el=A.a(s([]),t.jl)
@@ -70708,14 +70709,14 @@ B.Dh=A.a(s([]),A.aw("y<agJ<@>>"))
 B.hl=A.a(s([]),t.AO)
 B.Dl=A.a(s([]),t.D1)
 B.hm=A.a(s([]),t.l)
-B.l_=A.a(s([]),t.s)
+B.l0=A.a(s([]),t.s)
 B.aj=A.a(s([]),t.oU)
 B.Dk=A.a(s([]),t.Lx)
 B.PD=A.a(s([]),t.p)
 B.Db=A.a(s([]),t.t)
-B.l1=A.a(s([]),t.ee)
+B.l2=A.a(s([]),t.ee)
 B.Dd=A.a(s([]),t.XS)
-B.l2=A.a(s(["https://apps.apple.com/us/app/bamrec-mentor/id1566223766","https://apps.apple.com/pk/app/bamrec-family/id6452472515","https://apps.apple.com/pk/app/id6452499299","https://apps.apple.com/pk/app/makkah-pharmacy/id1604929350","https://apps.apple.com/pk/app/cruiselegend/id6464536349","https://apps.apple.com/pk/app/barkat-food/id6612012126","https://pub.dev/packages/awesome_snackbar_content","https://github.com/mhmzdev/The_Holy_Quran_App","https://github.com/mhmzdev/MedKit-Pharmacy-App-Using-Flutter","https://github.com/mhmzdev/Here-I-Am-Alert-App","https://github.com/mhmzdev/Covid19-Tracker-App","https://github.com/mhmzdev/Messenger-Chat-Head-Flutter-UI","https://github.com/mhmzdev/flutter.dev-Flutter-Web-Clone","https://github.com/mhmzdev/Earbender_Music_App","https://github.com/mhmzdev/FTP_GUI_Java","https://github.com/mhmzdev/My-Order-Resturant-Ordering-System","https://github.com/mhmzdev/Hidev_Web"]),t.s)
+B.l3=A.a(s(["https://apps.apple.com/us/app/bamrec-mentor/id1566223766","https://apps.apple.com/pk/app/bamrec-family/id6452472515","https://apps.apple.com/pk/app/id6452499299","https://apps.apple.com/pk/app/makkah-pharmacy/id1604929350","https://apps.apple.com/pk/app/cruiselegend/id6464536349","https://apps.apple.com/pk/app/barkat-food/id6612012126","https://pub.dev/packages/awesome_snackbar_content","https://github.com/mhmzdev/The_Holy_Quran_App","https://github.com/mhmzdev/MedKit-Pharmacy-App-Using-Flutter","https://github.com/mhmzdev/Here-I-Am-Alert-App","https://github.com/mhmzdev/Covid19-Tracker-App","https://github.com/mhmzdev/Messenger-Chat-Head-Flutter-UI","https://github.com/mhmzdev/flutter.dev-Flutter-Web-Clone","https://github.com/mhmzdev/Earbender_Music_App","https://github.com/mhmzdev/FTP_GUI_Java","https://github.com/mhmzdev/My-Order-Resturant-Ordering-System","https://github.com/mhmzdev/Hidev_Web"]),t.s)
 B.hn=A.a(s(["assets/work/bamrec.png","assets/projects/cruiselegend-logo.png","assets/projects/makkah-pharm-logo.png"]),t.s)
 B.wr=new A.qu(0,"topLeft")
 B.wu=new A.qu(3,"bottomRight")
@@ -70735,8 +70736,7 @@ B.hI=new A.f6(5,"numLockModifier")
 B.hJ=new A.f6(6,"scrollLockModifier")
 B.hK=new A.f6(7,"functionModifier")
 B.qd=new A.f6(8,"symbolModifier")
-B.l3=A.a(s([B.cm,B.cn,B.co,B.cp,B.hH,B.hI,B.hJ,B.hK,B.qd]),A.aw("y<f6>"))
-B.l4=A.a(s(["Bamrec Mentor App","Bamrec Family App","Bamrec Organization App","Makkah Pharmacy","CruiseLegend","Barkat Food","Eclair Pizza","Awesome Snackbar Dart Package","The Holy Qur'an","MedKit","Here I Am","COVID-19","Messenger Chat Head UI","flutter.dev - Flutter Web","Earbender","File Transfer Protocol","My Order","Hidev"]),t.s)
+B.l4=A.a(s([B.cm,B.cn,B.co,B.cp,B.hH,B.hI,B.hJ,B.hK,B.qd]),A.aw("y<f6>"))
 B.yy=new A.os(0,"auto")
 B.yz=new A.os(1,"full")
 B.yA=new A.os(2,"chromium")
