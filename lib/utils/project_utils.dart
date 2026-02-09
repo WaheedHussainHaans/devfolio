@@ -1,5 +1,6 @@
 class ProjectUtils {
   static const List<String> banners = [
+    "assets/projects/cak-cover.jpg",
     "assets/projects/bamrec-mentor-cover.png",
     "assets/projects/bamrec-family-cover.png",
     "assets/projects/bamrec-org-cover.png",
@@ -15,6 +16,7 @@ class ProjectUtils {
   ];
 
   static const List<String> icons = [
+    "assets/projects/cak-logo.png",
     "assets/projects/bamrec.png",
     "assets/projects/bamrec.png",
     "assets/projects/bamrec.png",
@@ -36,7 +38,7 @@ class ProjectUtils {
   ];
 
   static const List<String> titles = [
-    "Bamrec Mentor App",
+    "Calling All Kids – Call Santa", "Bamrec Mentor App",
     "Bamrec Family App",
     "Bamrec Organization App",
     "Makkah Pharmacy",
@@ -57,6 +59,7 @@ class ProjectUtils {
   ];
 
   static const List<String> description = [
+    "Calling All Kids – Call Santa is an education/children’s interaction app that lets young users have real-time interactive calls with fictional characters—including Santa Claus—using automatic speech recognition and natural language understanding. ",
     'The Bamrec Mentor App connects students with experienced mentors for personalized guidance and skill development, helping achieve their goals faster.',
     'Bamrec Family App allows families to register for events, hire mentors, and stay informed with the latest organization news, making it easy to stay connected and engaged.',
     'The Bamrec Organization App enables organizations to create and manage events, hire mentors, handle kid check-ins, and share news updates, streamlining event coordination and communication.',
@@ -78,6 +81,7 @@ class ProjectUtils {
   ];
 
   static const List<String> links = [
+    "https://apps.apple.com/us/app/calling-all-kids-call-santa/id6450181716",
     'https://apps.apple.com/us/app/bamrec-mentor/id1566223766',
     'https://apps.apple.com/pk/app/bamrec-family/id6452472515',
     'https://apps.apple.com/pk/app/id6452499299',

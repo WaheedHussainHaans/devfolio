@@ -12,7 +12,7 @@ class StaticUtils {
 
   // photos
   static const String mobilePhoto = 'assets/photos/mobile.png';
-  static const String coloredPhoto = 'assets/photos/colored.jpg';
+  static const String coloredPhoto = 'assets/photos/colored.jpeg';
   static const String blackWhitePhoto = 'assets/photos/black-white-1.png';
 
   // work
@@ -51,7 +51,7 @@ class StaticUtils {
   ];
 
   static const String resume =
-      'https://drive.google.com/file/d/1oShaijCXbCvgLK0H_JfIwxvlmDa_G2zm/view?usp=sharing';
+      'https://drive.google.com/file/d/1K_Mwr18z9hINBjQG9y2gORtxUqSHo4P7/view?usp=sharing';
 
   static const String gitHub = 'https://github.com/WaheedHussainHaans';
 }
